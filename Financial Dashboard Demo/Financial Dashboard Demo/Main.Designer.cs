@@ -29,23 +29,16 @@
         private void InitializeComponent()
         {
             flowLayoutPanelStocks = new FlowLayoutPanel();
-            stockPanel1 = new Financial_Dashboard_Demo.Controls.StockPanel();
             label1 = new Label();
             SuspendLayout();
             // 
             // flowLayoutPanelStocks
             // 
+            flowLayoutPanelStocks.AutoScroll = true;
             flowLayoutPanelStocks.Location = new Point(44, 63);
             flowLayoutPanelStocks.Name = "flowLayoutPanelStocks";
-            flowLayoutPanelStocks.Size = new Size(527, 485);
+            flowLayoutPanelStocks.Size = new Size(866, 591);
             flowLayoutPanelStocks.TabIndex = 0;
-            // 
-            // stockPanel1
-            // 
-            stockPanel1.Location = new Point(593, 63);
-            stockPanel1.Name = "stockPanel1";
-            stockPanel1.Size = new Size(524, 45);
-            stockPanel1.TabIndex = 0;
             // 
             // label1
             // 
@@ -61,11 +54,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1378, 666);
-            Controls.Add(stockPanel1);
             Controls.Add(label1);
             Controls.Add(flowLayoutPanelStocks);
             Name = "Main";
             Text = "Form1";
+            Load += Main_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -74,6 +67,5 @@
 
         private FlowLayoutPanel flowLayoutPanelStocks;
         private Label label1;
-        private Controls.StockPanel stockPanel1;
     }
 }

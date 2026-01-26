@@ -1,5 +1,6 @@
 using Financial_Dashboard_Demo.Controls;
 using Financial_Dashboard_Demo.Services;
+using System.Threading.Tasks;
 
 namespace Financial_Dashboard_Demo
 {
@@ -10,7 +11,12 @@ namespace Financial_Dashboard_Demo
             InitializeComponent();
         }
 
-        private async void Main_Load(object sender, EventArgs e)
+        private async void Main_Load_1(object sender, EventArgs e)
+        {
+            await LoadStocks();
+        }
+
+        private async Task LoadStocks()
         {
             flowLayoutPanelStocks.Controls.Clear();
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Financial_Dashboard_Demo.Models
+﻿namespace Financial_Dashboard_Demo.Models
 {
     public class StockInfo
     {
@@ -12,5 +8,4 @@ namespace Financial_Dashboard_Demo.Models
         public decimal Price { get; set; }
         public decimal ChangePercent { get; set; }
     }
-
 }

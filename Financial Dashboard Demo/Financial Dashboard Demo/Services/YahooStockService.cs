@@ -1,7 +1,6 @@
 ﻿using YahooFinanceApi;
 using Financial_Dashboard_Demo.Models;
 
-
 namespace Financial_Dashboard_Demo.Services
 {
     public static class YahooStockService
@@ -24,15 +23,31 @@ namespace Financial_Dashboard_Demo.Services
                     Field.RegularMarketChangePercent)
                 .QueryAsync();
 
-            return data.Select(s => new StockInfo
+            var list = new List<StockInfo>();
+
+            foreach (var s in data)
             {
-                Symbol = s.Key,
-                Company = s.Value[Field.LongName]?.ToString(),
-                Price = Convert.ToDecimal(s.Value[Field.RegularMarketPrice]),
-                MarketCap = Convert.ToDecimal(s.Value[Field.MarketCap]),
-                ChangePercent = Convert.ToDecimal(
-                    s.Value[Field.RegularMarketChangePercent])
-            }).ToList();
+                list.Add(new StockInfo
+                {
+                    Symbol = s.Key,
+                    Company = s.Value[Field.LongName]?.ToString() ?? "N/A",
+
+                    Price = s.Value[Field.RegularMarketPrice] != null
+                        ? Convert.ToDecimal(s.Value[Field.RegularMarketPrice])
+                        : 0,
+
+                    MarketCap = s.Value[Field.MarketCap] != null
+                        ? Convert.ToDecimal(s.Value[Field.MarketCap])
+                        : 0,
+
+                    ChangePercent = s.Value[Field.RegularMarketChangePercent] != null
+                        ? Convert.ToDecimal(
+                            s.Value[Field.RegularMarketChangePercent])
+                        : 0
+                });
+            }
+
+            return list;
         }
     }
 }

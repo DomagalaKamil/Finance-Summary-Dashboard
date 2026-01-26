@@ -79,7 +79,7 @@
             Controls.Add(lblMarketCap);
             Controls.Add(lblCompany);
             Name = "StockPanel";
-            Size = new Size(497, 45);
+            Size = new Size(589, 59);
             ResumeLayout(false);
             PerformLayout();
         }
