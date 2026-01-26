@@ -1,0 +1,24 @@
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Financial Dashboard Demo.exe
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Financial Dashboard Demo.deps.json
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Financial Dashboard Demo.runtimeconfig.json
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Financial Dashboard Demo.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Financial Dashboard Demo.pdb
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\CsvHelper.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Flurl.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Flurl.Http.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\Newtonsoft.Json.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\bin\Debug\net10.0-windows\YahooFinanceApi.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.csproj.AssemblyReference.cache
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial_Dashboard_Demo.Main.resources
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.csproj.GenerateResource.cache
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.AssemblyInfoInputs.cache
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.AssemblyInfo.cs
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.csproj.CoreCompileInputs.cache
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financia.48FAD7AC.Up2Date
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\refint\Financial Dashboard Demo.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.pdb
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial Dashboard Demo.genruntimeconfig.cache
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\ref\Financial Dashboard Demo.dll
+C:\Users\Domag\source\repos\Financial Dashboard Demo\Financial Dashboard Demo\obj\Debug\net10.0-windows\Financial_Dashboard_Demo.Controls.StockPanel.resources
