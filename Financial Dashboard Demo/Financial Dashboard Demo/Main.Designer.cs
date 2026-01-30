@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             flowLayoutPanelStocks = new FlowLayoutPanel();
-            label1 = new Label();
             SuspendLayout();
             // 
             // flowLayoutPanelStocks
@@ -40,32 +39,20 @@
             flowLayoutPanelStocks.Size = new Size(866, 591);
             flowLayoutPanelStocks.TabIndex = 0;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(50, 31);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
-            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1378, 666);
-            Controls.Add(label1);
             Controls.Add(flowLayoutPanelStocks);
             Name = "Main";
             Text = "Form1";
             Load += Main_Load_1;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private FlowLayoutPanel flowLayoutPanelStocks;
-        private Label label1;
     }
 }
