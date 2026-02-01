@@ -1,6 +1,6 @@
 USE finance_demo;
 
-/*
+
 #Create tables
 CREATE TABLE Income (
     transactionID INT AUTO_INCREMENT PRIMARY KEY,
@@ -71,8 +71,63 @@ INSERT INTO expenses(transactionValue, transactionDescription, transactionDate) 
 INSERT INTO expenses(transactionValue, transactionDescription, transactionDate) VALUES ('160.00', 'other', '2025-09-25');
 INSERT INTO expenses(transactionValue, transactionDescription, transactionDate) VALUES ('89.75', 'other', '2025-10-03');
 INSERT INTO expenses(transactionValue, transactionDescription, transactionDate) VALUES ('132.40', 'other', '2025-10-10');
-*/
+
 SELECT * from income;
 SELECT * from expenses;
 SELECT SUM(transactionValue) As total_value
 FROM expenses; 
+
+CREATE TABLE portfolio_transactions (
+    transaction_id INT AUTO_INCREMENT PRIMARY KEY,
+    stock_name VARCHAR(100) NOT NULL,
+    stock_code VARCHAR(20) NOT NULL,
+    price_at_purchase DECIMAL(10,2) NOT NULL,
+    purchase_date DATE NOT NULL,
+    quantity INT NOT NULL
+);
+
+INSERT INTO portfolio_transactions
+(stock_name, stock_code, price_at_purchase, purchase_date, quantity)
+VALUES
+('Apple Inc.', 'AAPL', 168.20, '2023-11-10', 15),
+('Apple Inc.', 'AAPL', 182.75, '2024-04-12', 5),
+
+('Tesla Inc.', 'TSLA', 255.40, '2023-12-01', 3),
+('Tesla Inc.', 'TSLA', 230.10, '2024-05-08', 7),
+
+('Microsoft Corporation', 'MSFT', 298.60, '2023-10-18', 6),
+('Microsoft Corporation', 'MSFT', 332.15, '2024-04-22', 4),
+
+('Amazon.com Inc.', 'AMZN', 132.40, '2023-09-30', 10),
+('Amazon.com Inc.', 'AMZN', 149.90, '2024-06-01', 6),
+
+('NVIDIA Corporation', 'NVDA', 480.25, '2024-01-05', 4),
+('NVIDIA Corporation', 'NVDA', 720.80, '2024-06-15', 2),
+
+('Alphabet Inc. (Google)', 'GOOGL', 138.60, '2024-02-14', 8),
+
+('Meta Platforms Inc.', 'META', 410.50, '2024-03-11', 5);
+
+CREATE TABLE portfolio_history (
+    snapshot_date DATE PRIMARY KEY,
+    total_value DECIMAL(12,2)
+);
+
+INSERT INTO portfolio_history (snapshot_date, total_value) VALUES
+('2023-09-30', 1324.00),
+('2023-10-18', 3115.60),
+('2023-11-10', 5638.60),
+('2023-12-01', 6404.80),
+('2024-01-05', 8325.80),
+('2024-02-14', 9434.60),
+('2024-03-11', 11487.10),
+('2024-04-12', 12400.85),
+('2024-04-22', 13729.45),
+('2024-05-08', 15340.15),
+('2024-06-01', 16239.55),
+('2024-06-15', 17681.15);
+
+
+SELECT snapshot_date, total_value
+FROM portfolio_history
+ORDER BY snapshot_date;
